@@ -27,8 +27,7 @@
 /* Return a feedback string that rappresent the differece from date1 and date2 */
 + (NSString *)differenceFeedbackFromDate:(NSDate *)date1 andDate:(NSDate *)date2 {
     
-    double ti = [date1 timeIntervalSinceDate:date2];
-    ti = ti * -1;
+    double ti = [date2 timeIntervalSinceDate:date1];
     
     if (ti < 60) {
         
@@ -58,7 +57,7 @@
 
 
 /* Get actual timestamp (int) */
-+ (int)getActualTimestamp {
++ (int)getCurrentTimestamp {
     return [[NSDate date] timeIntervalSince1970];
 }
 
