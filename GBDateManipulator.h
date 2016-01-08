@@ -12,6 +12,6 @@
 
 + (NSString *)differenceFeedbackFromDate:(NSDate *)date1 andDate:(NSDate *)date2;
 + (NSString *)getStringToLocaleDate:(NSDate *)date;
-+ (int)getActualTimestamp;
++ (int)getCurrentTimestamp;
 
 @end
